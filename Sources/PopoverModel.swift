@@ -112,7 +112,7 @@ class PopoverModel: ObservableObject {
         reload()
 
         /// Some other popovers need to wait until the rotation has completed before updating.
-        DispatchQueue.main.asyncAfter(deadline: .now() + Popovers.frameUpdateDelayAfterBoundsChange) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + PopoversEnum.frameUpdateDelayAfterBoundsChange) {
             self.refresh(with: Transaction(animation: .default))
         }
     }

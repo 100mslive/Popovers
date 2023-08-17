@@ -12,7 +12,7 @@ import SwiftUI
 /**
  A collection of constants.
  */
-public enum Popovers {
+public enum PopoversEnum {
     /// The minimum distance a popover needs to be dragged before it starts getting offset.
     public static var minimumDragDistance = CGFloat(2)
 
